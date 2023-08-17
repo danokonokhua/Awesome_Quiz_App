@@ -1,0 +1,55 @@
+/* importing google fonts */
+@import url('https://fonts.google.com/css2?family=Poppins:weight@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #007bff;
+}
+    
+
+
+::selection{
+
+
+    color: #fff;
+    background: #007bff;
+    
+}
+
+.start-btn,
+.info_box,
+.quiz_box,
+.result_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 2),
+                0 6px 20px rgb(0, 0, 0, 19);
+}
+
+.info_box.activateinfo,
+.quiz_box.activeQuiz,
+.result_box.activeResult {
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.start-btn button{
+    font-size: 25px;
+    font-weight: 500;
+    color: #007bff;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
